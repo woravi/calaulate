@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-          appBar: AppBar(title: const Text("Taew Minimart")),
+          appBar: AppBar(title: const Text("RW1968 Minimart")),
           body: const Home(),
         ));
   }
@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
     // ฟังชั่นพิเศษที่ใช้สำหรับการตั้งค่าในตอนแรก
     super.initState();
 
-    result.text = "ซื้อแอปเปิ้ลจำนวน x ผล ราคาผลละ 10 บาท รวมลูกค้าต้องจ่ายทั้งหมด x บาท";
+    result.text = "ซื้อสินค้าจำนวน x ผล ราคา x บาท รวมลูกค้าต้องจ่ายทั้งหมด x บาท";
 
   }
 
@@ -52,7 +52,7 @@ class _HomeState extends State<Home> {
               child: Column(
                 children: [
                   Image.asset('assets/header_home.png', width: 300, ),
-                  const Text("แต้ว มินิมาร์ท", style: TextStyle(fontSize: 30,),),
+                  const Text("RW Project", style: TextStyle(fontSize: 30,),),
                   TextField(
                       controller: price,
                       decoration: const InputDecoration(
